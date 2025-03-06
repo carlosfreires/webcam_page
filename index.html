@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"/>
+        <title>webcam page</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1>webcam Page</h1>
+        <!-- Botão para iniciar a transmissão -->
+        <button id="btnStart">Iniciar Captura</button>
+        <!-- Pré-visualização da câmera -->
+        <video id="videoPreview" autoplay playsinline style="width:500px; border:1px solid #ccc;"></video>
+        <br/>
+        <!-- Botões para controle -->
+        <button id="btnRecord">Gravar</button>
+        <button id="btnStop" disabled>Parar Gravação</button>
+
+          <!-- Link para download do vídeo gravado -->
+        <br>
+        <a id="downloadLink" style="display:none;">Download do Vídeo</a>
+
+
+        <!-- Seção para reproduzir um vídeo salvo -->
+        <h2>Reproduzir Arquivo de video WEBM (.webm)</h2>
+        
+        
+        <video id="videoPlayback" controls style="width:500px; border:1px solid #ccc;"></video>
+        <br/>
+        <input type="file" id="fileInput" accept="video/*">
+
+        <!-- Inclusão do JavaScript compilado -->
+        <script src="main.js"></script>
+
+    </body>
+        
+        
+</html>

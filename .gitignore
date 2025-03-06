@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Logs de sistema e de aplicações
+*.log
+
+# Arquivos que mapeiam o código JavaScript compilado de volta ao código fonte original 
+*.js.map
+
+# Arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Pastas de configurações de editores e IDEs
+.vscode/
+.idea/
+
+

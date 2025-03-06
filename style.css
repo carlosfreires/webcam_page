@@ -1,0 +1,131 @@
+/* Fontes Importadas */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset básico e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+/* Títulos */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #4A90E2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Botões */
+button {
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+}
+
+/* Efeito Hover nos Botões */
+button:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #B0C4DE;
+    cursor: not-allowed;
+}
+
+/* Pré-visualização do Vídeo */
+video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    max-height: 500px;
+}
+
+/* Link de Download */
+#downloadLink {
+    display: none;
+    text-decoration: none;
+    color: #4A90E2;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+/* Estilo de Input de Arquivo */
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Efeito Focus no Input de Arquivo */
+input[type="file"]:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.6);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    video {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    input[type="file"] {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
